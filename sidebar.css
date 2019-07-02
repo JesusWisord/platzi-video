@@ -1,0 +1,82 @@
+:root{
+  --darkBlue: #181931
+}
+
+body{
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  margin:0 ;
+  font-family: 'Lato', sans-serif;
+}
+
+.sidebar{
+  background: var(--darkBlue);
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 100px 1fr 1fr;
+  padding: 10px;
+}
+
+.sidebar .image{
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+}
+
+.sidebar .image img{
+  width: 100%;
+}
+
+.MyPlaylist{
+  color: white;
+  display: grid;
+  height: 100%;
+  grid-template-rows: 50px 50px 50px;
+  overflow: scroll;
+}
+
+.sidebar .titulosPlaylist{
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0 0;
+  color: white;
+}
+
+.MyPlaylist a{
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  
+}
+
+.MyPlaylist li{
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.MyPlaylist ol{
+  padding-left: 40px;
+  width: 250px;
+}
+
+.PlaylistAmigos img{
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  top: 15px;
+  right: 15px;
+}
+
+.PlaylistAmigos {
+  overflow: scroll;
+  height: 100%;
+}
+
+.PlaylistAmigos li{
+ list-style: none;
+}
+
+.PlaylistAmigos a{
+  text-decoration: none;
+  color: white;
+}
