@@ -1,0 +1,44 @@
+.listas{
+  margin-top: 50px;
+  height: 100%;
+}
+
+.right-side{
+  display: grid;
+  grid-template-rows: 50px 1fr;
+  overflow: scroll;
+  height: 100vh;
+}
+
+.genero-titulo{
+  margin-left: 15px;
+  font-size: 24px;
+}
+
+.genero-lista{
+  display: grid;
+  grid-auto-flow: column;
+  overflow: scroll;
+  width: calc(100vw - 350px);
+}
+
+.item{
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.item .title{
+  font-size: 16px;
+  margin-left: 15px;
+}
+
+.item .image{
+  height: 180px;
+  width: 250px;
+  overflow: hidden;
+}
+
+.item .image img{
+  width: 100%;
+  align-self: center;
+}

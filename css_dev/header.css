@@ -2,8 +2,12 @@
 
 .header{
   display: flex;
+  position: fixed;
+  background-color: white;
   justify-content: space-between;
   height: 50px;
+  width: calc(100% - 350px);
+  padding-bottom: 10px;
 }
 
 .header .user{

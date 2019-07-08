@@ -6,6 +6,7 @@
   display: grid;
   grid-template-rows: 100px 1fr 1fr;
   padding: 10px;
+  bottom: 0;
 }
 
 .sidebar .image{

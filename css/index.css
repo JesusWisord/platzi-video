@@ -1,5 +1,3 @@
-/* ------------------- root // body ----------------------- */
-
 :root{
   --darkBlue: #181931
 }
@@ -11,6 +9,49 @@ body{
   font-family: 'Lato', sans-serif;
 }
 
+/* --------------header---------- */
+
+.header{
+  display: flex;
+  position: fixed;
+  background-color: white;
+  justify-content: space-between;
+  height: 50px;
+  width: calc(100% - 350px);
+  padding-bottom: 10px;
+}
+
+.header .user{
+  display: flex;
+  align-content: center;
+}
+
+.header .user img{
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+.header .user .username{
+  padding-right: 35px;
+  margin-top: 20px;
+}
+
+.header #searchBar{
+  width: 200px;
+  margin: 15px 20px;
+  -webkit-box-shadow: 0px 0px 32px -9px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 32px -9px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 20px -9px rgba(0,0,0,0.75); 
+  padding: 15px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  border: none;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;  
+}
+
 /* ------------ sidebar ----------------- */
 
 .sidebar{
@@ -19,6 +60,7 @@ body{
   display: grid;
   grid-template-rows: 100px 1fr 1fr;
   padding: 10px;
+  bottom: 0;
 }
 
 .sidebar .image{
@@ -124,4 +166,49 @@ body{
   border: none;
   font-family: 'Lato', sans-serif;
   font-size: 16px;  
+}
+
+.listas{
+  margin-top: 50px;
+  height: 100%;
+}
+
+.right-side{
+  display: grid;
+  grid-template-rows: 50px 1fr;
+  overflow: scroll;
+  height: 100vh;
+}
+
+.genero-titulo{
+  margin-left: 15px;
+  font-size: 24px;
+}
+
+.genero-lista{
+  display: grid;
+  grid-auto-flow: column;
+  overflow: scroll;
+  width: calc(100vw - 350px);
+}
+
+.item{
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.item .title{
+  font-size: 16px;
+  margin-left: 15px;
+}
+
+.item .image{
+  height: 180px;
+  width: 250px;
+  overflow: hidden;
+}
+
+.item .image img{
+  width: 100%;
+  align-self: center;
 }
