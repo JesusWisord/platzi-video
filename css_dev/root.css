@@ -1,0 +1,10 @@
+:root{
+  --darkBlue: #181931
+}
+
+body{
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  margin:0 ;
+  font-family: 'Lato', sans-serif;
+}
