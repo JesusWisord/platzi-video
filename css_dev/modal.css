@@ -4,8 +4,9 @@
   align-items: center;
   background-color: white;
   width: 750px;
-  height: 500px;
+  height: 600px;
   padding: 1em;
+  flex-direction: column;
 }
 
 .modal p{
