@@ -1,0 +1,309 @@
+:root{
+  --darkBlue: #181931
+}
+
+body{
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  margin: 0;
+  /* background: lightblue; */
+  font-family: 'Lato', sans-serif;
+}
+
+/* --------------header---------- */
+
+.header{
+  display: flex;
+  position: fixed;
+  background-color: white;
+  justify-content: space-between;
+  height: 50px;
+  width: calc(100% - 350px);
+  padding-bottom: 10px;
+}
+
+.header .user{
+  display: flex;
+  align-content: center;
+}
+
+.header .user img{
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+.header .user .username{
+  padding-right: 35px;
+  margin-top: 20px;
+}
+
+.header #searchBar{
+  width: 200px;
+  margin: 8px 20px;
+  box-shadow: 0px 0px 20px -9px rgba(0,0,0,0.75); 
+  /* padding: 15px; */
+  background: #f0f0f0;
+  border-radius: 10px;
+  border: none;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;  
+}
+
+.header .search-form{
+  height: 100%;
+}
+
+/* ------------ sidebar ----------------- */
+
+.sidebar{
+  background: var(--darkBlue);
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 100px 1fr 1fr;
+  padding: 0 10px;
+  padding-bottom: 0;
+}
+
+.sidebar .image{
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+}
+
+.sidebar .image img{
+  width: 100%;
+}
+
+.MyPlaylist{
+  color: white;
+  display: grid;
+  height: 100%;
+  grid-template-rows: 50px 50px 50px;
+  overflow: scroll;
+}
+
+.sidebar .titulosPlaylist{
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0 0;
+  color: white;
+  padding-bottom: -10px;
+}
+
+.MyPlaylist a{
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  
+}
+
+.MyPlaylist li{
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.MyPlaylist ol{
+  padding-left: 40px;
+  width: 250px;
+}
+
+.PlaylistAmigos img{
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  top: 15px;
+  right: 15px;
+}
+
+.PlaylistAmigos {
+  overflow: scroll;
+  height: 100%;
+  max-height: 350px;
+}
+
+.PlaylistAmigos li{
+ list-style: none;
+ padding-bottom: 10px;
+}
+
+.PlaylistAmigos a{
+  text-decoration: none;
+  color: white;
+}
+
+/* --------------header---------- */
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+}
+
+.header .user{
+  display: flex;
+  align-content: center;
+}
+
+.header .user img{
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+.header .user .username{
+  padding-right: 35px;
+  margin-top: 20px;
+}
+
+.header #searchBar{
+  width: 200px;
+  margin: 15px 20px;
+  box-shadow: 0px 0px 20px -9px rgba(0,0,0,0.75); 
+  padding: 15px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  border: none;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;  
+}
+
+.listas{
+  margin-top: 60px;
+  height: 100%;
+}
+
+.right-side{
+  display: grid;
+  grid-template-rows: 50px 1fr;
+  overflow: scroll;
+  height: 100vh;
+}
+
+.genero-titulo{
+  margin-left: 15px;
+  font-size: 24px;
+}
+
+.image.loader img{
+  width: 100%;
+}
+
+.genero-lista{
+  display: grid;
+  grid-auto-flow: column;
+  overflow: scroll;
+  width: calc(100vw - 350px);
+}
+
+.item{
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.item .title{
+  font-size: 16px;
+  margin-left: 15px;
+}
+
+.item .image{
+  height: 350px;
+  width: 250px;
+  overflow: hidden;
+}
+
+.item .image img{
+  width: 100%;
+  align-self: center;
+}
+
+.modal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 750px;
+  height: 600px;
+  padding: 1em;
+  flex-direction: column;
+}
+
+.modal p{
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+.modal-container{
+  background: rgba(0,0,0,.5);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transform: translateY(-3000px);
+}
+
+@-webkit-keyframes modalIn {
+  0% {
+    transform: translateY(-3000px);
+  }
+  60% {
+    transform: translateY(25px);
+  }
+  75% {
+    transform: translateY(-10px);
+  }
+  90% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes modalIn {
+  0% {
+    transform: translateY(-3000px);
+  }
+  60% {
+    transform: translateY(25px);
+  }
+  75% {
+    transform: translateY(-10px);
+  }
+  90% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes modalOut {
+  0% {
+    transform: translateY(5px);
+  }
+  10%{
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(-3000px);
+  }
+}
+
+@keyframes modalOut {
+  0% {
+    transform: translateY(5px);
+  }
+  10%{
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(-3000px);
+  }
+}
