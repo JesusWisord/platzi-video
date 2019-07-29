@@ -2,16 +2,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: #8383c4;
   width: 750px;
   height: 600px;
   padding: 1em;
   flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 50px;
 }
 
 .modal p{
-  padding-left: 20px;
-  padding-right: 10px;
+  text-align: justify;
+  width: 90%;
+  overflow: scroll;
 }
 
 .modal-container{

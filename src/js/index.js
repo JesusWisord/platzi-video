@@ -1,6 +1,10 @@
+import '../css/css_dev.css'
+
 const BASE_API = 'https://yts.lt/api/v2/list_movies.json';
 
 // Constantes de contenedores con selectores
+
+console.log("hola")
 
 const $actionContainer = document.querySelector("#action-list")
 const $terrorContainer = document.querySelector("#terror-list")
@@ -76,8 +80,8 @@ async function load (){
 // Funcion que checa si existe caché en memoria con modificaciones
 // para correr en navegadores tipo brave
   async function cacheExist(category){
-    cacheData=null;
-    categoryList= `${category}List`;
+    var cacheData=null;
+    var categoryList= `${category}List`;
     try {
       cacheData = window.localStorage.getItem(categoryList);
     } catch (error) {
@@ -98,11 +102,11 @@ async function load (){
 
   }
 
-  actionList=await cacheExist('action');
+  var actionList=await cacheExist('action');
 
-  terrorList = await cacheExist('horror');
+  var terrorList = await cacheExist('horror');
 
-  animationList = await cacheExist('animation');
+  var animationList = await cacheExist('animation');
 
     function itemTemplate(movie){
         return `<div class="item" data-id="${movie.id}">

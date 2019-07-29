@@ -12,21 +12,23 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'js/[name].js'
   },
-  devServer: {
-    hot: true,
-  },
   module: {
     rules: [
       {
         test: /\.css$/,
         use: [
-          // 'style-loader',
           {
             loader: MiniCssExtractPlugin.loader
           },
-          'css-loader'
-        ]
-      }
+          'css-loader',
+          'postcss-loader',
+        ],
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use:'babel-loader',
+      },
     ]
   },
   plugins: [
