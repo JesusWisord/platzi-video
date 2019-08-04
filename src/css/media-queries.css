@@ -1,0 +1,117 @@
+@custom-media --tablet-viewport (width <= 780px);
+@custom-media --mobile-l-viewport (width <= 500px);
+@custom-media --mobile-s-viewport (width <= 360px);
+
+@media screen and (--tablet-viewport) {
+	body {
+		grid-template-columns: 280px 1fr;
+	}
+
+	/* .header {
+		width: calc(100% - var(--sideBarSmaller));
+	} */
+
+	.sidebar {
+		width: 250px;
+		font-size: 12px;
+	}
+
+	.sidebar .titulosPlaylist {
+		font-size: 18px;
+		padding-left: 10px;
+	}
+
+	.MyPlaylist {
+		overflow-x: hidden;
+	}
+
+	.MyPlaylist ol {
+		width: 90%;
+	}
+
+	.PlaylistAmigos li img {
+		height: 40px;
+		padding-right: 0;
+	}
+
+	.PlaylistAmigos li {
+		padding-left: 0px;
+		font-size: 15px;
+	}
+
+	.genero-titulo {
+		font-size: 18px;
+	}
+
+	.item .title {
+		font-size: 14px;
+	}
+
+	.item .image {
+		height: auto;
+		width: 150px;
+	}
+
+	.header .user {
+		margin-right: -90px;
+		margin-top: 10px;
+		font-size: 12px;
+	}
+
+	.modal {
+		height: 80%;
+		width: 70%;
+	}
+
+	.modal img {
+		width: 200px;
+		height: auto;
+	}
+}
+
+@media screen and (--mobile-l-viewport) {
+	.sidebar {
+		transform: translate(-400px);
+	}
+
+	body {
+		grid-template-columns: 0 100vw;
+	}
+
+	.genero-lista {
+		width: 100vw;
+	}
+
+	.header .username {
+		vertical-align: baseline;
+	}
+
+	.header {
+		width: 80%;
+	}
+
+	.header .user img {
+		height: 30px;
+		margin-top: 20px;
+	}
+
+	.modal img {
+		width: 150px;
+		height: auto;
+	}
+
+	.modal {
+		height: 70%;
+	}
+}
+
+@media screen and (--mobile-s-viewport) {
+	.header #searchBar {
+		width: 150px;
+		font-size: 14px;
+	}
+
+	.header .user .username {
+		margin-top: 25px;
+	}
+}

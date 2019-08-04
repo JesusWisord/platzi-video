@@ -1,48 +1,48 @@
-.listas{
-  margin-top: 60px;
-  height: 100%;
+.listas {
+	margin-top: 60px;
+	height: 100%;
 }
 
-.right-side{
-  display: grid;
-  grid-template-rows: 50px 1fr;
-  overflow: scroll;
-  height: 100vh;
+.right-side {
+	display: grid;
+	grid-template-rows: 50px 1fr;
+	overflow: scroll;
+	height: 100vh;
 }
 
-.genero-titulo{
-  margin-left: 15px;
-  font-size: 24px;
+.genero-titulo {
+	margin-left: 15px;
+	font-size: 24px;
 }
 
-.image.loader img{
-  width: 100%;
+.image.loader img {
+	width: 100%;
 }
 
-.genero-lista{
-  display: grid;
-  grid-auto-flow: column;
-  overflow: scroll;
-  width: calc(100vw - 350px);
+.genero-lista {
+	display: grid;
+	grid-auto-flow: column;
+	overflow: scroll;
+	width: calc(100vw - var(--sideBar));
 }
 
-.item{
-  margin-left: 20px;
-  cursor: pointer;
+.item {
+	margin-left: 20px;
+	cursor: pointer;
 }
 
-.item .title{
-  font-size: 16px;
-  margin-left: 15px;
+.item .title {
+	font-size: 16px;
+	margin-left: 15px;
 }
 
-.item .image{
-  height: 350px;
-  width: 250px;
-  overflow: hidden;
+.item .image {
+	height: 350px;
+	width: 250px;
+	overflow: hidden;
 }
 
-.item .image img{
-  width: 100%;
-  align-self: center;
+.item .image img {
+	width: 100%;
+	align-self: center;
 }

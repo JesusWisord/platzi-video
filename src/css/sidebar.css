@@ -1,116 +1,115 @@
 /* ------------ sidebar ----------------- */
 
-.sidebar{
-  background: var(--darkBlue);
-  height: 100vh;
-  display: grid;
-  grid-template-rows: 100px 1fr 1fr;
-  padding: 0 10px;
-  padding-bottom: 0;
+.sidebar {
+	background: var(--darkBlue);
+	height: 100vh;
+	display: grid;
+	grid-template-rows: 100px 1fr 1fr;
+	padding: 0 10px;
+	padding-bottom: 0;
 }
 
-.sidebar .image{
-  width: 100%;
-  height: 100%;
-  padding: 5px;
+.sidebar .image {
+	width: 100%;
+	height: 100%;
+	padding: 5px;
 }
 
-.sidebar .image img{
-  width: 100%;
+.sidebar .image img {
+	width: 100%;
 }
 
-.MyPlaylist{
-  color: white;
-  display: grid;
-  height: 100%;
-  grid-template-rows: 50px 50px 50px;
-  overflow: scroll;
+.MyPlaylist {
+	color: white;
+	display: grid;
+	height: 100%;
+	grid-template-rows: 50px 50px 50px;
+	overflow: scroll;
 }
 
-.sidebar .titulosPlaylist{
-  font-size: 24px;
-  font-weight: bold;
-  margin: 20px 0 0;
-  color: white;
-  padding-bottom: -10px;
+.sidebar .titulosPlaylist {
+	font-size: 24px;
+	font-weight: bold;
+	margin: 20px 0 0;
+	color: white;
+	padding-bottom: -10px;
 }
 
-.MyPlaylist a{
-  text-decoration: none;
-  color: white;
-  font-size: 14px;
-  
+.MyPlaylist a {
+	text-decoration: none;
+	color: white;
+	font-size: 14px;
 }
 
-.MyPlaylist li{
-  padding-bottom: 10px;
-  margin: 0;
+.MyPlaylist li {
+	padding-bottom: 10px;
+	margin: 0;
 }
 
-.MyPlaylist ol{
-  padding-left: 40px;
-  width: 250px;
+.MyPlaylist ol {
+	padding-left: 40px;
+	width: 250px;
 }
 
-.PlaylistAmigos img{
-  height: 50px;
-  border-radius: 50%;
-  position: relative;
-  top: 15px;
-  right: 15px;
+.PlaylistAmigos img {
+	height: 50px;
+	border-radius: 50%;
+	position: relative;
+	top: 15px;
+	right: 15px;
 }
 
 .PlaylistAmigos {
-  overflow: scroll;
-  height: 100%;
-  max-height: 350px;
+	overflow: scroll;
+	height: 100%;
+	max-height: 350px;
 }
 
-.PlaylistAmigos li{
- list-style: none;
- padding-bottom: 10px;
+.PlaylistAmigos li {
+	list-style: none;
+	padding-bottom: 10px;
 }
 
-.PlaylistAmigos a{
-  text-decoration: none;
-  color: white;
+.PlaylistAmigos a {
+	text-decoration: none;
+	color: white;
 }
 
 /* --------------header---------- */
 
-.header{
-  display: flex;
-  justify-content: space-between;
-  height: 50px;
+.header {
+	display: flex;
+	justify-content: space-between;
+	height: 50px;
 }
 
-.header .user{
-  display: flex;
-  align-content: center;
+.header .user {
+	display: flex;
+	align-content: center;
 }
 
-.header .user img{
-  height: 40px;
-  border-radius: 50%;
-  margin-right: 15px;
-  margin-top: 10px;
+.header .user img {
+	height: 40px;
+	border-radius: 50%;
+	margin-right: 15px;
+	margin-top: 10px;
 }
 
-.header .user .username{
-  padding-right: 35px;
-  margin-top: 20px;
+.header .user .username {
+	padding-right: 35px;
+	margin-top: 20px;
 }
 
-.header #searchBar{
-  width: 200px;
-  margin: 15px 20px;
-  -webkit-box-shadow: 0px 0px 32px -9px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 32px -9px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 20px -9px rgba(0,0,0,0.75); 
-  padding: 15px;
-  background: #f0f0f0;
-  border-radius: 10px;
-  border: none;
-  font-family: 'Lato', sans-serif;
-  font-size: 16px;  
+.header #searchBar {
+	width: 200px;
+	margin: 15px 20px;
+	-webkit-box-shadow: 0px 0px 32px -9px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 0px 32px -9px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 0px 20px -9px rgba(0, 0, 0, 0.75);
+	padding: 15px;
+	background: #f0f0f0;
+	border-radius: 10px;
+	border: none;
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
 }
